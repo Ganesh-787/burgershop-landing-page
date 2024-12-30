@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Unlock&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: SF Pro Display;
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: linear-gradient(to bottom, #04050A 0%, #13192A 50%, #04050A 100%);
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2vw;
+    padding: 0 15vw;
+}
+nav img{
+    height: 6vh;
+}
+nav img:hover{
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1vw;  
+    list-style: none;
+    font-weight: 600;
+}
+nav ul li:hover, nav #icons i:hover, nav>i:active{
+    cursor: pointer;
+    color: #FFC107;
+    transition: all .5S ease;
+}
+nav #icons{
+    display: flex;
+    gap: 1vw;
+    font-size: 1.5vw;
+    font-weight: 900;
+}
+
+nav>i{
+    font-size: 6vh;
+    display: none;
+}
+nav .active {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    background-color: #000;
+    z-index: 99;
+    padding: 1rem 0;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .active li {
+    margin: 1rem 0;
+}
+
+#main{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+
+#section1{
+    height: 100%;
+    width: 65%;
+
+}
+#section1 #content{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vw;
+}
+#section1 #content h1{
+    font-family: "Unlock", serif;
+    font-size: 7vw;
+    width: 50vw;
+}
+#section1 #content p{
+    font-size: 1.2vw;
+    line-height: 4vh;
+    width: 50vw;
+    margin: 1vw 0;
+}
+#section1 #content #btns{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 3vw;
+}
+#section1 #content button{
+    height: 50px;
+    width: 150px;
+    padding: 0 20px;
+    margin: 0 10px;
+    background-color: #FFC107;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s ease;
+
+}
+#section1 #content button:hover{
+    background-color: #e5ac00;
+}
+#section1 #content #btns #btn2{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #FFC107;
+}
+#section1 #content #btns #btn2:hover{
+    background-color: #FFC107;
+    color: #fff;
+    border: none;
+}
+
+#section1 #select{
+    height: 25%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#section1 #select .burger{
+    width: 7vw;
+    height: 10vh;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.glow{
+    transform: scale(1.15);
+    position: relative;
+    box-shadow: 0 0 10px #FFC107, 0 0 20px #FFC107, 0 0 30px #f5dc91, 0 0 40px #FFC107;
+}
+
+#b1{
+    background: url("/assets/burger1.png");
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#b1{
+    background: url("/assets/burger1.png");
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#b2{
+    background: url("/assets/burger2.png");
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#b3{
+    background: url("/assets/Burger3.png");
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#b4{
+    background: url("/assets/burger4.png");
+    background-size: 8vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#b5{
+    background: url("/assets/burger5.png");
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#section1 #select .burger:hover{
+    border-color: #e5ac00;
+    transform: scale(1.05);
+}
+
+   
+
+#section2{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section2 img{
+    height: 70vh;
+    width: 30vw;
+    position: absolute;
+}
+#image1{
+    z-index: 1;
+}
+#image2{
+    z-index: 2;
+}
+#image3{
+    z-index: 3;
+    height: 40vh;
+}
+#image4{
+    z-index: 4;
+}
+#image5{
+    z-index: 5;
+}
+
+
+@keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+    animation: slideUp 0.5s forwards;
+  }
+  
+  .sliding-down {
+    animation: slideDown 0.5s forwards;
+  }
+  
+
+
+@media (max-width: 600px) {
+    nav ul{
+        display: none;
+    }
+    nav #icons{
+        display: none;
+    }
+    nav>i{
+        display: block;
+    }
+
+    #main{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    #section1{
+        height: 55vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #section1 #content{
+        height: 75%;
+        
+    }
+    #section1 #content h1{
+        font-size: 10vw;
+        width: 80%;
+        text-align: justify;
+    }
+    #section1 #content p{
+        font-size: 3vw;
+        line-height: 3vh;
+        width: 80%;
+        margin: 3vw 0;
+        text-align: justify;
+    }
+    #section1 #content #btns{
+        width: 90%;
+    }
+    #section1 #content button{
+        height: 50px;
+        width: 150px;
+        font-size: 4vw;
+        font-weight: 600;
+    
+    }
+    #section1 #select{
+        height: 25%;
+        width: 100%;
+        margin-left: 50px;
+        
+    }
+    #section1 #select .burger{
+        width: 50px;
+        height: 50px;
+        gap: 10px;
+        background-size: 45px;
+    }
+   
+    #section2{
+        height: 35vh;
+        width: 100%;
+    }
+    #section2 img{
+        height: 300px;
+        width: 300px;
+        /* width: 30vw; */
+        position: absolute;
+    }
+}

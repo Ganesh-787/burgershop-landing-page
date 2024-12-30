@@ -1,0 +1,1 @@
+# Simple landing page for a burger shop with basic animations using HTML, CSS and JS
